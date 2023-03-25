@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		
+		h1 {
+			text-align: center;
+			color: #333;
+		}
+		
+		form {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			width: 300px;
+			margin: 0 auto;
+		}
+		
+		input[type="text"] {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			font-size: 20px;
+		}
+		
+		input[type="button"] {
+			display: inline-block;
+			padding: 10px 20px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			border: none;
+			border-radius: 5px;
+			background-color: #333;
+			color: #fff;
+			font-size: 18px;
+			cursor: pointer;
+		}
+		
+		input[type="button"]:hover {
+			background-color: #555;
+		}
+		
+		input[value="="] {
+			background-color: #5cb85c;
+		}
+		
+		input[value="C"] {
+			background-color: #d9534f;
+		}
+	</style>
+</head>
+<body>
+	<h1>Calculator</h1>
+	<form>
+		<input type="text" id="result" placeholder="0">
+		<br><br>
+		<input type="button" value="1" onclick="addToResult('1')">
+		<input type="button" value="2" onclick="addToResult('2')">
+		<input type="button" value="3" onclick="addToResult('3')">
+		<input type="button" value="+" onclick="addToResult('+')">
+		<br>
+		<input type="button" value="4" onclick="addToResult('4')">
+		<input type="button" value="5" onclick="addToResult('5')">
+		<input type="button" value="6" onclick="addToResult('6')">
+		<input type="button" value="-" onclick="addToResult('-')">
+		<br>
+		<input type="button" value="7" onclick="addToResult('7')">
+		<input type="button" value="8" onclick="addToResult('8')">
+		<input type="button" value="9" onclick="addToResult('9')">
+		<input type="button" value="*" onclick="addToResult('*')">
+		<br>
+		<input type="button" value="0" onclick="addToResult('0')">
+		<input type="button"
